@@ -1,0 +1,5 @@
+Write a solution to report the movies with an odd-numbered ID and a description that is not "boring".
+
+select * from Cinema 
+where MOD(id, 2) = 1 AND description !='boring'
+order by rating desc ;
